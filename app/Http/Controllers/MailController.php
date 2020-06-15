@@ -17,8 +17,8 @@ class MailController extends Controller
             'verification_code' => "WERERWER"
         ];
 
-        //Mail::to('lali.comp@gmail.com')->send(new SignupEmail($data));
-        Mail::to('jawadkhan31849@gmail.com')->send(new SignupEmail($data));
+        
+        Mail::to('your email address')->send(new SignupEmail($data));
 
         //Mail::to('')->send(new SignupEmail($data));
         return redirect('/home');
