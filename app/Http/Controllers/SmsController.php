@@ -13,7 +13,7 @@ class SmsController extends Controller
         // return $request;
         Nexmo::message()->send([
             'to' => '92' . $request->mobile,
-            'from' => '923066364644',
+            'from' => '',
             'text' => 'your result has bee announced !!'
         ]);
 
